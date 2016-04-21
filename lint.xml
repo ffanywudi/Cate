@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/zby/rental_cars/fragment/CarFragment.java" />
+    </issue>
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="InlinedApi">
+        <ignore path="src/com/trade/app/activity/MainActivity.java" />
+    </issue>
+    <issue id="ParserError">
+        <ignore path="src/com/zby/rental_cars/activity/MainActivity.java" />
+        <ignore path="src/com/zby/rental_cars/activity/SetMyInfoActivity.java" />
+        <ignore path="src/com/zby/rental_cars/multiphotopicker/view/PublishActivity.java" />
+    </issue>
+    <issue id="ShowToast" severity="ignore">
+        <ignore path="src/com/trade/app/multiphotopicker/view/PublishActivity.java" />
+        <ignore path="src/com/zby/rental_cars/activity/GoodDetailActivity.java" />
+        <ignore path="src/com/zby/rental_cars/activity/MainActivity.java" />
+        <ignore path="src/com/zby/rental_cars/fragment/CarFragment.java" />
+        <ignore path="src/com/zby/rental_cars/multiphotopicker/util/UploadFile.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/zby/rental_cars/fragment/CarFragment.java" />
+    </issue>
+</lint>
