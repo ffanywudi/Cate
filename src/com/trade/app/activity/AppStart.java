@@ -22,7 +22,7 @@ public class AppStart extends Activity{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);   //全屏显示
-		
+		 
 		setContentView(R.layout.appstart);
 		 // 初始化 Bmob SDK
         Bmob.initialize(this, AppID);
