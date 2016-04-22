@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_personlcenter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/full_bagcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/cl_titlebar_bkg" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/titlebar_view_padding_top"
+            android:paddingLeft="@dimen/titlebar_view_padding_left"
+            android:paddingRight="@dimen/titlebar_view_padding_left"
+            android:paddingTop="@dimen/titlebar_view_padding_top"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back_bkg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/feedback"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/white_frame"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/space_8"
+                    android:layout_marginRight="@dimen/space_8"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/space_5"
+                    android:paddingTop="@dimen/space_5" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_pen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:gravity="center"
+                        android:text="@string/sugmsg"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:background="@color/line" />
+
+                <EditText
+                    android:id="@+id/edt_feedback_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_150"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_43"
+                    android:layout_marginRight="@dimen/space_43"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@color/full_transparent"
+                    android:gravity="left"
+                    android:hint="@string/sugmsg_content"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/text_color_light_gray"
+                    android:textSize="@dimen/text_size_12" 
+                    android:maxLength="200">
+
+                    <requestFocus />
+                </EditText>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/space_8"
+                    android:layout_marginRight="@dimen/space_8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/space_5"
+                    android:paddingTop="@dimen/space_5" >
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_2"
+                        android:drawableLeft="@drawable/phone_num"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/sugmsg_way"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/edt_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/full_transparent"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/sugmsg_way_content"
+                        android:textColor="@color/text_color_black"
+                        android:textColorHint="@color/text_color_light_gray"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:background="@color/line" >
+                </View>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@drawable/btn_submit_bkg"
+                android:text="@string/personalcenter_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_in_submit" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
